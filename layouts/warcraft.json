@@ -1,0 +1,148 @@
+{
+  "id": "root",
+  "type": "column",
+  "children": [
+    {
+      "id": "zone",
+      "type": "block",
+      "content": {
+        "mod": "warcraft",
+        "props": {
+          "role": "zone"
+        }
+      },
+      "size": {
+        "px": 42
+      },
+      "window_drag": true
+    },
+    {
+      "id": "world",
+      "type": "row",
+      "children": [
+        {
+          "id": "sidebar",
+          "type": "column",
+          "children": [
+            {
+              "id": "quests",
+              "type": "block",
+              "content": {
+                "mod": "warcraft",
+                "props": {
+                  "role": "quests"
+                }
+              },
+              "size": {
+                "weight": 1
+              },
+              "min": 140
+            },
+            {
+              "id": "party",
+              "type": "block",
+              "content": {
+                "mod": "warcraft",
+                "props": {
+                  "role": "party"
+                }
+              },
+              "size": {
+                "weight": 1
+              },
+              "min": 140
+            },
+            {
+              "id": "meter",
+              "type": "block",
+              "content": {
+                "mod": "warcraft",
+                "props": {
+                  "role": "meter"
+                }
+              },
+              "size": {
+                "weight": 0.8
+              },
+              "min": 110
+            }
+          ],
+          "size": {
+            "px": 290
+          },
+          "min": 220,
+          "max": 420,
+          "gap": 6
+        },
+        {
+          "id": "main",
+          "type": "block",
+          "content": {
+            "tab": "active",
+            "pane": {
+              "header": {
+                "content": {
+                  "mod": "warcraft",
+                  "props": {
+                    "role": "pane"
+                  }
+                },
+                "reveal": "always",
+                "height": 28,
+                "position": "top"
+              },
+              "background": "#00000000",
+              "border": {
+                "width": 2,
+                "color": "#5a4a2a"
+              },
+              "focus": {
+                "width": 2,
+                "color": "#ffd100"
+              },
+              "radius": 3,
+              "gap": 10,
+              "lone": true
+            }
+          }
+        }
+      ],
+      "padding": [
+        6,
+        8
+      ],
+      "gap": 8,
+      "resizable": false
+    },
+    {
+      "id": "actionbar",
+      "type": "block",
+      "content": {
+        "mod": "warcraft",
+        "props": {
+          "role": "bar"
+        }
+      },
+      "size": {
+        "px": 98
+      }
+    }
+  ],
+  "background": {
+    "image": "mods/warcraft/art/loading/northrend2.jpg",
+    "fit": "cover"
+  },
+  "theme": "warcraft",
+  "ui_font": "Friz Quadrata TT",
+  "terminal_padding": [
+    10,
+    8
+  ],
+  "terminal_opacity": 0.6100000143051147,
+  "titlebar": "none",
+  "traffic_lights": [
+    12,
+    14
+  ],
+  "preview": "layouts/warcraft.png"
+}

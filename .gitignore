@@ -1,0 +1,4 @@
+# herdr-app writes these into every mod folder on start (editor type hints).
+mods/*/gpui-kit.d.ts
+mods/*/jsconfig.json
+.DS_Store
